@@ -456,5 +456,14 @@ span {
   outline: none;
   border-radius: 9px;
 }
-
+.social-media-links{
+  margin-left: 20px;
+  color:#fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 7%;
+}
+.social-media-links a{
+  margin-right: 10px;
+}
 
