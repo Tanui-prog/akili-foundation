@@ -1,0 +1,460 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+:root {
+  --bg-color: rgb(150, 11, 11);
+  --text-color: white;
+  --link-color: blue;
+  --button-color: green;
+  --footer-color: black;
+}
+body {
+  min-height: 100vh;
+  background: url(pawel-czerwinski-ODBZPx4LawY-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+span {
+  color: var(--bg-color);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99999;
+  background: white;
+  height: 50px;
+  border-bottom: double 2px black;
+}
+.header img {
+  width: 200px;
+  height: 40px;
+}
+.logo {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  margin-left: 48px;
+}
+
+.navbar li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.25rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+}
+
+@media (max-width: 900px) {
+  /* Hide the navbar on smaller screens */
+  .navbar {
+    display: none;
+  }
+
+  /* Make the logo smaller on smaller screens */
+  .logo {
+    font-size: 30px;
+  }
+
+  /* Make the font size of the navbar links smaller on smaller screens */
+  .navbar a {
+    font-size: 15px;
+  }
+
+  /* Make the font size of the dropdown items smaller on smaller screens */
+  .dropdown-item {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1122px) {
+  /* Make the navbar items take up the full width of the screen on larger screens */
+  .navbar a {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Make the dropdown menu appear below the navbar item on larger screens */
+  .dropdown-menu {
+    top: 100%;
+    left: 0;
+  }
+}
+
+/* Hero section */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 700px;
+  background-color: var(--text-color);
+  margin: 20px;
+}
+
+.hero-text {
+  width: 50%;
+  padding: 20px;
+}
+
+.hero-image {
+  width: 70%;
+  height: 400px;
+  max-width: 600px;
+  background-image: url("images/Graduation-1024x768.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 100px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.hero-text a {
+  color: #000;
+  text-decoration: none;
+}
+
+.hero-text .hero_button {
+  color: red;
+}
+
+/* //About us */
+.heading {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.heading h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  color: black;
+  margin-bottom: 25px;
+  position: relative;
+  font-weight: 500;
+}
+
+.heading h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+}
+
+.heading p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+.about-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+  border-radius: 10px;
+}
+
+.about-image img:hover {
+  transform: scale(1.2 -2deg);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.about-content .read-more {
+  display: inline;
+  padding: 10px 20px;
+  font-size: 19px;
+  color: var(--bg-color);
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+.about-content .read-more:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .heading {
+    padding: 0px 20px;
+  }
+  .heading h1 {
+    font-size: 36px;
+  }
+  .heading p {
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  .about-container {
+    padding: 0%;
+  }
+  .about {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .about-image {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .about-content p {
+    padding: 0px;
+    font-size: 16px;
+  }
+}
+
+/* Learn more about organization home page  */
+.heading-programs {
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.column {
+  margin-top: 3rem;
+  padding-left: 3rem;
+  &:hover {
+    padding-left: 0;
+    .card .txt {
+      margin-left: 1rem;
+      h1,
+      p {
+        color: rgb(0, 0, 0);
+        opacity: 1;
+      }
+    }
+    a {
+      color: rgb(0, 0, 0);
+      &:after {
+        width: 10%;
+      }
+    }
+  }
+}
+.card {
+  min-height: 200px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 1.7rem 1.2rem;
+  border: solid 2px;
+  border-radius: 0;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.05rem;
+  font-family: "Oswald", sans-serif;
+  box-shadow: 0 0 21px rgba(0, 0, 0, 0.27);
+  
+  .txt {
+    margin-left: -3rem;
+    z-index: 1;
+    
+   
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      
+    }
+    p {
+      font-size: 1rem;
+      font-family: "poppins", sans-serif;
+      letter-spacing: 0rem;
+      margin-top: 33px;
+      opacity: 1;
+      color: rgb(0, 0, 0);
+    }
+  }
+  a {
+    z-index: 3;
+    font-size: 0.7rem;
+    color: rgb(196, 0, 0);
+    margin-left: 1rem;
+    position: relative;
+    bottom: -0.5rem;
+    text-transform: uppercase;
+    &:after {
+      content: "";
+      display: inline-block;
+      height: 0.5em;
+      width: 0;
+      margin-right: -100%;
+      margin-left: 10px;
+      border-top: 1px solid rgb(255, 1, 1);
+      transition: 0.5s;
+    }
+  }
+  .ico-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  i {
+    position: relative;
+    right: -50%;
+    top: 60%;
+    font-size: 12rem;
+    line-height: 0;
+    opacity: 3.2;
+    color: rgb(201, 19, 19);
+    z-index: 0;
+  }
+}
+
+/* contact us */
+
+.contact-us h1{
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contact-us .formdiv{
+  display: block;
+    text-align: left;
+    margin-left: 48px;
+    margin-top: 40px;
+    border-top: #333  5px solid;
+
+}
+.contact-us form{
+  display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background: rgb(116, 50, 50);
+    padding: 20px;
+    height: 350px;
+    border-radius: 9px;
+    margin-top: 20px;
+}
+
+.contact-us form input{
+  border: none;
+  outline: none;
+  width:100% ;
+  border-radius: 8px;
+}
+.contact-us form textarea{
+  resize: none;
+  border: none;
+  outline: none;
+  width:100% ;
+}
+.contact-us form button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 9px;
+}
+
+
