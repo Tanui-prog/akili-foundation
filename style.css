@@ -826,9 +826,12 @@ textarea{
 
 
 .getInvolved-header{
+  background-image: radial-gradient(
+              rgba(128, 81, 81, 0.896), 
+              rgba(0, 0, 0, 0.75)), url(
+'images/partner-withus.png');
   margin-top: 50px;
   height: 50vh;
-  background: var(--bg-color);
 }
 
 .getInvolved-header{
@@ -859,7 +862,9 @@ textarea{
 }
 .getcard{
   width: 500px;
-  background: var(--bg-color);
+  background: radial-gradient(
+    rgba(128, 81, 81, 0.896), 
+    rgba(0, 0, 0, 0.75));
   border-radius: 20px;
   margin: 50px;
   display: flex;
