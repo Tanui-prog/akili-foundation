@@ -5,13 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akili Foundation</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- or -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
@@ -23,8 +25,8 @@
 
         <nav class="navbar">
             <a href="index.html">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Get Involved</a>
+            <a href="about.html">About Us</a>
+            <a href="getinvolved.html">Get Involved</a>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle nav-link" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -50,7 +52,7 @@
         <div class="row">
             <div class="about-col">
 
-                <h1>About Akili Foundation</h1>]
+                <h1>About Akili Foundation</h1>
                 <p>
                     Akili Foundation is a non-profit organization dedicated to empowering individuals and communities
                     through education and sustainable development initiatives. Founded in [year], Akili Foundation
@@ -81,15 +83,16 @@
                     <h2>Mission</h2>
                 </div>
                 <h5>
-                    At the heart of Akili Foundation's mission lies an unwavering commitment to providing access to quality education for all. Recognizing education as the cornerstone of individual and societal progress, Akili Foundation has implemented a multifaceted approach to address the educational needs of underserved communities.
+                    At the heart of Akili Foundation's mission lies an unwavering commitment to providing access to quality education for all. <br> Recognizing education as the cornerstone of individual and societal progress, Akili Foundation has implemented a multifaceted approach to address the educational needs of underserved communities.
                     
+                    <br>
                     Through its scholarship program, Akili Foundation serves as a beacon of hope for countless students from underprivileged backgrounds. By providing financial assistance to deserving individuals, the foundation empowers them to pursue their educational aspirations, opening doors to a brighter future.<br>
                     
                 </div>
 
             <div class="progs">
                 <div class="logoprogs">
-                    <a href=""></a>
+                    <i class='bx bx-check-shield bx-burst' ></i>
                     <h2>Values</h2>
                 </div>
                 <h5>
@@ -104,15 +107,43 @@
                     Hope: Akili Foundation works to instill hope and optimism in the communities it serves.<br>
                 </h5>
             </div>
-                <div class="progs">
-                    <div class="logoprogs">
-                        <a href=""></a>
-                        <h2>Our Impact</h2>
-                    </div>
-                </div>
-
-
     </section>
+
+    <div class="testimonial-container">
+        <h2 class="heading">Valuable <span>Testimonial</span></h2>
+        <div class="testimonial-wrapper">
+          <div class="testimonial-box mySwiper">
+            <div class="testimoniall-content swiper-wrapper">
+              <div class="testimonial-slide swiper-slide">
+                <img src="" alt="" />
+                <h3>Hosea kili OGW, Group Managing Director/ CEO </h3>
+                <p>
+                  It is without hesitation that I wholeheartedly recommend Victor . His exceptional technical abilities, collaborative spirit, and commitment to excellence make him an invaluable asset to any organization. I am confident that he will continue to thrive in their future endeavors and contribute significantly to any team he join.
+                </p>
+              </div>
+    
+              <div class="testimonial-slide swiper-slide">
+                <img src="images/Benjamin-Tanui.jpg" alt="" />
+                <h3>Linda </h3>
+                <p>
+                  Victor is a great freelancer to work with. He is quick, responsive and works hard to understand your needs. He has very good knowledge of the technical aspects of my projects - and is always willing to share his expertise in this area.
+    
+                </p>
+              </div>
+              <div class="testimonial-slide swiper-slide">
+                <img src="images/Grace-Chepchumba.jpg" alt="" />
+                <h3>Biron</h3>
+                <p>
+                  One of the aspects that truly impressed me about Victor  is his versatility. They possess a unique ability to adapt his writing style to various genres and industries, making him an invaluable asset to clients across different fields. From technical articles to lifestyle blogs, Victor Kiptoo effortlessly captures the essence of each topic and communicates it with remarkable clarity and creativity.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
 
     <section id="footer">
 
@@ -195,10 +226,13 @@
                                     <a href="about.html" class="text-reset">About Us</a>
                                 </p>
                                 <p>
-                                    <a href="#!" class="text-reset">Contact Us</a>
+                                    <a href="getinvolved.html" class="text-reset">Get Involved</a>
                                 </p>
                                 <p>
-                                    <a href="#!" class="text-reset">Donate</a>
+                                    <a href="contact.html" class="text-reset">Contact Us</a>
+                                </p>
+                                <p>
+                                    <a href="donate" class="text-reset">Donate</a>
                                 </p>
                             </div>
                             <!-- Grid column -->
@@ -234,12 +268,13 @@
 
     </section>
 
+      <!-- scroll reVEal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-
-
-
-
-
-
-
+  <!-- script swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- custom js -->
+  <script src="script.js"></script>
 </body>
+
+</html>
