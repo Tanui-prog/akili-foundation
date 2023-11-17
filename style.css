@@ -1013,6 +1013,9 @@ button.contact_form_submit {
   article {
     container: card/inline-size;
   }
+  #menu-icon{
+    display: none;
+  }
   .article-body p {
     display: none;
   }
