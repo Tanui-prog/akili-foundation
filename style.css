@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -102,41 +102,13 @@ span {
   display: inline-block;
 }
 
-@media (max-width: 900px) {
-  /* Hide the navbar on smaller screens */
-  .navbar {
-    display: none;
-  }
 
-  /* Make the logo smaller on smaller screens */
-  .logo {
-    font-size: 30px;
-  }
-
-  /* Make the font size of the navbar links smaller on smaller screens */
-  .navbar a {
-    font-size: 15px;
-  }
-
-  /* Make the font size of the dropdown items smaller on smaller screens */
-  .dropdown-item {
-    font-size: 13px;
-  }
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--bg-color);
+  display: none;
 }
 
-@media (min-width: 900px) and (max-width: 1122px) {
-  /* Make the navbar items take up the full width of the screen on larger screens */
-  .navbar a {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Make the dropdown menu appear below the navbar item on larger screens */
-  .dropdown-menu {
-    top: 100%;
-    left: 0;
-  }
-}
 
 /* Hero section */
 .hero-container {
@@ -379,76 +351,6 @@ Generic layout (demo looks)
   padding-inline: 24px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
-}
-
-@media screen and (max-width: 960px) {
-  article {
-    container: card/inline-size;
-  }
-  .article-body p {
-    display: none;
-  }
-}
-
-@container card (min-width: 380px) {
-  .article-wrapper {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 16px;
-  }
-  .article-body {
-    padding-left: 0;
-  }
-  figure {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  figure img {
-    height: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-  }
-}
-
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap; 
-  width: 1px;
-}
-
-
-
-@media (max-width: 768px) {
-  .heading {
-    padding: 0px 20px;
-  }
-  .heading h1 {
-    font-size: 36px;
-  }
-  .heading p {
-    font-size: 17px;
-    margin-bottom: 0px;
-  }
-  .about-container {
-    padding: 0%;
-  }
-  .about {
-    padding: 20px;
-    flex-direction: column;
-  }
-  .about-image {
-    margin-right: 0px;
-    margin-bottom: 20px;
-  }
-  .about-content p {
-    padding: 0px;
-    font-size: 16px;
-  }
 }
 
 /* Learn more about organization home page  */
@@ -1044,6 +946,60 @@ button.contact_form_submit {
 }
 
 
+/* donate */
+
+.donateHero {
+  background-image: radial-gradient(
+              rgba(122, 15, 15, 0.896), 
+              rgba(190, 134, 134, 0.95)), url(
+'images/donate.jpg');
+  margin-top: 50px;
+  height: 50vh;
+  background-repeat: no-repeat;
+
+}
+.donateHero h1{
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  font-weight: 400;
+
+}
+.donateHero p{
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  font-weight: 400;
+}
+.waysofdonating{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  background: #dfe1f3;
+  padding: 20px;
+}
+.donating{
+  width: 30%;
+  height: 200px;
+  background-image: radial-gradient(
+              rgba(126, 60, 60, 0.896), 
+              rgba(0, 0, 0, 0.95)), url(
+'images/donate.jpg');
+  border-radius: 9px;
+}
+.donating p{
+  text-align: center;
+  padding-top: 80px;
+  color: #ffffff;
+}
+.containerdonateways h1{
+  text-align: center;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 30px;
+}
 
 
 
@@ -1053,5 +1009,75 @@ button.contact_form_submit {
 
 
 
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+}
 
- 
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+
+
+@media (max-width: 768px) {
+  .heading {
+    padding: 0px 20px;
+  }
+  .heading h1 {
+    font-size: 36px;
+  }
+  .heading p {
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  .about-container {
+    padding: 0%;
+  }
+  .about {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .about-image {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .about-content p {
+    padding: 0px;
+    font-size: 16px;
+  }
+}
+
+
+
