@@ -113,9 +113,9 @@ span {
 /* Hero section */
 .hero-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 700px;
   background-color: var(--text-color);
   margin: 20px;
 }
@@ -126,7 +126,8 @@ span {
 }
 
 .hero-image {
-  width: 70%;
+  width: 700px;
+  margin-top: 50px;
   height: 400px;
   max-width: 600px;
   background-image: url("images/Graduation-1024x768.jpg");
@@ -185,7 +186,7 @@ span {
 
 .heading p {
   font-size: 18px;
-  color: #666;
+  color: #000000;
   margin-bottom: 35px;
 }
 
@@ -228,7 +229,7 @@ span {
 .about-content h2 {
   font-size: 23px;
   margin-bottom: 15px;
-  color: #333;
+  color: #000000;
 }
 
 .about-content p {
@@ -381,7 +382,6 @@ Generic layout (demo looks)
   }
 }
 .card {
-  height: 400px;
   margin: 0;
   margin-bottom: 30px;
   padding: 1.7rem 1.2rem;
@@ -475,8 +475,8 @@ hr {
 
 .containercontact{
   position: relative;
-  height:600px;
   display: flex;
+  flex-wrap: wrap;
   background-color: #adadad;
   padding: 30px;
   
@@ -487,11 +487,10 @@ hr {
   margin-top: 30px;
   margin-right: 60px;
   margin-bottom: 30px;
-  width: 400px;
+  max-width: 500px;
   height: 440px;
   border: #000000 solid 2px;
   border-radius: 20px;
-  z-index: 999;
   text-align: left;
   transition: all .3s ease-in-out;
 
@@ -527,7 +526,7 @@ textarea{
 }
 .social-icons{
   height: 20px;
-  width: 80px;
+  max-width: 80px;
   background-color: #adadad;
 }
 .social-icons i{
@@ -560,9 +559,12 @@ textarea{
 .social i:hover{
   color: black;
 }
-.map{
-  width: 400px;
-  height: 200px;
+
+.map iframe{
+  margin-left: 20px;
+  width: 600px;
+  max-width: 600px;
+  height: 440px;
   padding: 20px;
 }
 
@@ -977,7 +979,7 @@ button.contact_form_submit {
   display: flex;
   flex-wrap:wrap;
   justify-content: space-around;
-  background: #dfe1f3;
+  background: #e7e4e4;
   padding: 20px;
 }
 .donating{
@@ -1014,10 +1016,7 @@ button.contact_form_submit {
     container: card/inline-size;
   }
   #menu-icon{
-    display: none;
-  }
-  .article-body p {
-    display: none;
+    display: block;
   }
 }
 
@@ -1055,6 +1054,90 @@ button.contact_form_submit {
 
 
 @media (max-width: 768px) {
+
+  .navbar{
+    display: none;
+  }
+  .hero-container{
+   margin-top: 6px;
+   margin-left: 0;
+   margin-right: 0px;
+  }
+  
+  .hero-text{
+    width: max-content;
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  .hero-text h1{
+    font-size: 25px;
+    padding-top: 20px;
+  }
+  .hero-text p {
+    font-size: .9rem;
+  }
+  .hero-image{
+    width: 100%;
+    margin: 2px;
+    border-radius: 8px;
+  }
+  #menu-icon{
+    display: block;
+    color: rgb(231, 15, 15);
+  }
+  .row{
+    margin-right: 0px;
+    margin-left: -39px;
+  }
+  .article-wrapper {
+    background: rgb(255, 255, 255);
+  }
+  .social-icons{
+    display: none;
+  }
+
+
+  .containercontact form{
+    min-width: 300px;
+    margin: 2px;
+  }
+
+ .map iframe{
+    margin-left: 0px;
+    width: 340px;
+  padding-top: 20px;
+  }
+  .heading h1{
+    text-align: left;
+  }
+
+  .donateHero p{
+    font-size: 20px;
+
+  }
+  .donating {
+    width: 500px;
+    padding: 9px;
+    margin: 20px;
+  }
+  .donating p {
+    text-align: center;
+    padding-top: 51px;
+    color: #ffffff;
+  }
+
+
+    
+  .header {
+   padding: 0;
+  }
+  .header img{
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+  }
   .heading {
     padding: 0px 20px;
   }
