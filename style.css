@@ -1054,14 +1054,43 @@ button.contact_form_submit {
 
 @media (max-width: 768px) {
 
-  .navbar.about{
+  .navbar {
     display: none;
-
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
   }
-
-  .navbar{
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
     display: none;
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
+  
+  .dropdown-item {
+    color: white;
+  }
+  
+  .show-menu .dropdown-menu {
+    display: block;
+  }
+  
   .hero-container{
    margin-top: 6px;
    margin-left: 0;

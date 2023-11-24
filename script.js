@@ -34,3 +34,22 @@
         prev1: ".swiper-button-prev",
       }
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuIcon = document.getElementById('menu-icon');
+      const navbar = document.querySelector('.navbar');
+    
+      menuIcon.addEventListener('click', function () {
+        navbar.classList.toggle('show-menu');
+      });
+    
+      document.addEventListener('click', function (event) {
+        const isClickInsideNavbar = navbar.contains(event.target);
+        const isClickOnMenuIcon = event.target === menuIcon;
+    
+        if (!isClickInsideNavbar && !isClickOnMenuIcon) {
+          navbar.classList.remove('show-menu');
+        }
+      });
+    });
+    

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="indexa.css" />
+  </head>
+  <body>
+    <div class="fixed-wrap">
+      <div class="desktop-menu">
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+          <ul>
+            <li>
+              <a>Dropdown Menu Item</a>
+              <ul></ul>
+            </li>
+            <li><a>Home</a></li>
+            <li><a>home</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="mobile-menu">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so I can use the :checked selector on it.
+                    -->
+            <input type="checkbox" />
+
+            <div class="menuToggle-wrap">
+              <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="text-next-to-hamburger">Menu</div>
+            </div>
+
+            <!--
+                    Menu has to be inside of the button
+                    -->
+            <ul id="menu">
+              <div id="slide-in-wrap_menu-wrap">
+                <li>
+                  <a>Dropdown Menu Item</a>
+                  <ul>
+                    <li><a>home way</a></li>
+                    <li><a>home way</a></li>
+                    <li><a>home way</a></li>
+                    <li><a>home way</a></li>
+                    <li><a>home way</a></li>
+                    <li><a>home way</a></li>
+                  </ul>
+                </li>
+                <li><a>home way</a></li>
+                <li><a>home way</a></li>
+                <li><a>home way</a></li>
+                <li><a>home way</a></li>
+                <li><a>home way</a></li>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="header">
+      <img src="images/Akili-Logo.svg" alt="logo" />
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="getinvolved.html">Get Involved</a>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle nav-link"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Our Stories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <a href="contact.html">Contact Us</a>
+        <a href="donate.html">Donate</a>
+      </nav>
+    </div>
+
+    <div class="donateHero">
+      <h1>Donate</h1>
+      <p>
+        Giving to charity is a selfless act, thus it will boost your self-esteem
+        and self-worth
+      </p>
+    </div>
+    <section class="donate">
+      <div class="containerdonateways">
+        <h1>Ways of donating</h1>
+        <div class="waysofdonating">
+          <div class="donating">
+            <p>
+              Online Donation <br />
+              A-kilifoundation.co.ke
+            </p>
+          </div>
+          <div class="donating">
+            <p>
+              Bank deposits & wire tranfer <br />Co-op paybill:400222 <br />
+              A/C:01128200848400
+            </p>
+          </div>
+          <div class="donating">
+            <p>
+              Donate Via cheque <br />
+              A-kili Foundation
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="footer">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-red text-muted">
+          <!-- Section: Social media -->
+          <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+          >
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+              <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="social">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-gmail"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-youtube"></i>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>Akili Foundation
+                  </h6>
+                  <p>
+                    The Goal Isn't Just To Be Sober, It's About Building A Life
+                    You Need To Escape From
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                  <p>
+                    <a href="contact.html" class="text-reset">Rehab</a>
+                  </p>
+                  <p>
+                    <a href="contact.html" class="text-reset"
+                      >Course Enrollment</a
+                    >
+                  </p>
+                  <p>
+                    <a href="contact.html" class="text-reset"
+                      >Extra Curriculum
+                    </a>
+                  </p>
+                  <p>
+                    <a href="contact.html" class="text-reset"
+                      >Latest Projects</a
+                    >
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                  <p>
+                    <a href="index.html" class="text-reset">Home</a>
+                  </p>
+                  <p>
+                    <a href="about.html" class="text-reset">About Us</a>
+                  </p>
+                  <p>
+                    <a href="contact.html" class="text-reset">Contact Us</a>
+                  </p>
+                  <p>
+                    <a href="donate.html" class="text-reset">Donate</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                  <p>
+                    <i class="fas fa-home me-3"></i> Itigo, Chesumei, Nandi
+                    County P.O. Box 70-30307, Mosoriot, Nandi.
+                  </p>
+                  <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    info@akilifoundation.co.ke
+                  </p>
+                  <p><i class="fas fa-phone me-3"></i> 0757114749</p>
+                  <p><i class="fas fa-print me-3"></i> 0738114749</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+
+          <div
+            class="text-center p-4"
+            style="background-color: rgba(0, 0, 0, 0.05)"
+          >
+            © 2021 Copyright Akili Foundation
+          </div>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>
